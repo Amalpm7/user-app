@@ -4,14 +4,14 @@
             <div class="row g-3">
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-3">
                     <label for="" class="form-label">User Name</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="name" [(ngModel)]="name">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-12 col-lg-12 col-xl-12 col-xxl-3">
                     <label for="" class="form-label">Password</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="password" [(ngModel)]="password">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-12 col-lg-12 col-xl-12 col-xxl-3">
-                    <button class="btn btn-success">Login</button>
+                    <button class="btn btn-success" (click)="readValues()">Login</button>
                 </div>
                 <div class="col col-12 col-sm-6 col-md-612 col-lg-12 col-xl-12 col-xxl-3">
                     <a routerLink="/sign">If you are a new user click here</a>

@@ -4,34 +4,34 @@
             <div class="row g-3">
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-4 col-xxl-3">
                     <label for="" class="form-label">Name</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="name" [(ngModel)]="name">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-4 col-xxl-3">
                     <label for="" class="form-label">Phone Number</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="phnNum" [(ngModel)]="phnNum">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-4 col-xxl-3">
                     <label for="" class="form-label">Gender</label>
-                    <select name="" id="" class="form-control"></select>
+                    <select name="gender" id="" class="form-control" [(ngModel)]="gender"></select>
                     <option value="Male">Male</option>
                     <option value="FeMale">FeMale</option>
                     <option value="Other">Other</option>
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-4 col-xxl-3">
                     <label for="" class="form-label">Email</label>
-                    <input type="email" class="form-control">
+                    <input type="email" class="form-control" name="email" [(ngModel)]="email">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-3">
                     <label for="" class="form-label">Address</label>
-                    <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
+                    <textarea name="address" id="" cols="30" rows="10" class="form-control" [(ngModel)]="address"></textarea>
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-4 col-xxl-3">
                     <label for="" class="form-label">Pin Code</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="pin" [(ngModel)]="pin">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-4 col-xxl-3">
                     <label for="" class="form-label">Blood Group</label>
-                    <select name="" id="" class="form-control">
+                    <select name="bloodG" id="" class="form-control" [(ngModel)]="bloodG">
                         <option value="A+ve">A+ve</option>
                         <option value="A-ve">A-ve</option>
                         <option value="B+ve">B+ve</option>
@@ -43,26 +43,26 @@
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-4 col-xxl-3">
                     <label for="" class="form-label">DOB</label>
-                    <input type="text" class="form-control">
+                    <input type="date" class="form-control" name="dob" [(ngModel)]="dob">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-4 col-xxl-3">
                     <label for="" class="form-label">Age</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="age" [(ngModel)]="age">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-4 col-xxl-3">
                     <label for="" class="form-label">Parent Name</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="parent" [(ngModel)]="parent">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-4 col-xxl-3">
                     <label for="" class="form-label">Password</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="password" [(ngModel)]="password">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-4 col-xxl-3">
                     <label for="" class="form-label">Confirm Password</label>
-                    <input type="text" class="form-control">
+                    <input type="password" class="form-control" name="confirmpass" [(ngModel)]="confirmpass">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12  col-lg-12 col-xl-12 col-xxl-12">
-                    <button class="btn btn-danger">Register</button>
+                    <button class="btn btn-danger"(click)="readValue()">Register</button>
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-4 col-xxl-3">
                     <a routerLink="/">Sign In</a>
